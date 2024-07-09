@@ -81,7 +81,7 @@
                         </svg> <a href="">
                             Become a Seller
                         </a></li>
-                    <li><button class="justify-content-sb align-items-c">
+                    <li class="dropdown"><button class="justify-content-sb align-items-c">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-ellipsis-vertical">
@@ -89,7 +89,16 @@
                                 <circle cx="12" cy="5" r="1" />
                                 <circle cx="12" cy="19" r="1" />
                             </svg>
-                        </button></li>
+                        </button>
+                        <div class="dropdown-menu right-nil">
+                            <ul>
+                                <li><a href="">Notification Preferences</a></li>
+                                <li><a href="">24 X 7 Customer Care</a></li>
+                                <li><a href="">Advertise</a></li>
+                                <li><a href="">Download App</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -98,40 +107,75 @@
         <div class="flex justify-content-se align-items-c">
             <div>
                 <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">
-                <h6 class="t-align-c">Grocery</h6>
+                <h5 class="t-align-c">Grocery</h5>
             </div>
             <div>
                 <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="">
-                <h6 class="t-align-c">Mobiles</h6>
+                <h5 class="t-align-c">Mobiles</h5>
             </div>
-            <div>
+            <div class="dropdown fashion">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" alt="">
-                <h6 class="t-align-c">Fashion</h6>
+                <div class="flex justify-content-c align-items-c">
+                    <h5 class="t-align-c">Fashion</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">Men's Top Wear</a></li>
+                        <li><a href="">Men's Bottom Wear</a></li>
+                        <li><a href="">Women Ethnic</a></li>
+                        <li><a href="">Women Footwear</a></li>
+                        <li><a href="">Watches and Accessories</a></li>
+                        <li><a href="">Women Western</a></li>
+                        <li><a href="">Bags, Suitcases and Luggage</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><a href="">Essentials</a></li>
+                        <li><a href="">Winter</a></li>
+                    </ul>
+                </div>
             </div>
             <div>
                 <img src="https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="">
-                <h6 class="t-align-c">Electronics</h6>
+                <h5 class="t-align-c">Electronics</h5>
             </div>
             <div>
-                <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">
-                <h6 class="t-align-c">Appliances</h6>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="">
+                <h5 class="t-align-c">Appliances</h5>
             </div>
             <div>
-                <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">
-                <h6 class="t-align-c">Travel</h6>
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+                <h5 class="t-align-c">Furniture</h5>
             </div>
             <div>
-                <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">
-                <h6 class="t-align-c">Beauty, Toys</h6>
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" alt="">
+                <h5 class="t-align-c">Beauty, Toys</h5>
             </div>
             <div>
-                <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">
-                <h6 class="t-align-c">Two wheelers</h6>
+                <img src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="">
+                <h5 class="t-align-c">Travel</h5>
             </div>
         </div>
     </section>
 
     <section id="slider">
+        <button class="previous" onclick="previousSlide()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-left">
+                <path d="m15 18-6-6 6-6" />
+            </svg>
+        </button>
+        <button class="next" onclick="nextSlide()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-right">
+                <path d="m9 18 6-6-6-6" />
+            </svg>
+        </button>
         <div class="item">
             <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/9384b37a848c5e60.jpg?q=20" alt="">
         </div>
@@ -155,12 +199,14 @@
         function maintainSlides() {
             showSlides(currentIndex);
             currentIndex++;
-            if (currentIndex >= slides.length - 1) {
+            if (currentIndex > slides.length - 1) {
                 currentIndex = 0;
             }
             showSlides(currentIndex);
         }
-        setInterval(maintainSlides, 2000)
+        setInterval(maintainSlides, 2000);
+        showSlides(0);
+
     </script>
 </body>
 
