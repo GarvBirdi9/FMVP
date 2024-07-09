@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --bgcolr: #f1f2f4;
+    --fkblue: #2a55e5;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f5ff;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+
+body {
+    background-color: var(--bgcolr);
+}
+
+.flex {
+    display: flex;
+    background-color: var(--white);
+}
+
+header .flex {
+    padding: 7px 100px;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.justify-content-c {
+    justify-content: center;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0px 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2em;
+    text-align: center;
+    padding: auto 0px;
+}
+
+header .search-bar input {
+    width: 40vw;
+    height: 4vh;
+    padding-left: 28px;
+}
+
+input::placeholder {
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+input:focus {
+    border: none;
+}
+
+header .flex nav ul li {
+    margin: 8px;
+    padding: 5px;
+}
+
+
+header .flex nav ul li:first-child button:hover {
+    background-color: var(--fkblue);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+header .flex nav li:first-child button {
+    border: none;
+    background-color: var(--white);
+    font-size: 1.3em;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+header .flex nav li:last-child button {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+header .flex nav li:last-child button:hover {
+    background-color: var(--fkblue);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    border: 2px solid #2a55e5;
+}
+
+header nav ul li:nth-child(2) svg {
+    margin: 0px 9px;
+}
+
+header nav ul li:nth-child(3) svg {
+    margin: 0px 9px;
+}
+
+header .search-bar {
+    position: relative;
+}
+
+header .flex .search-bar .search-icon {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+header .flex nav li:first-child button:hover svg:last-child {
+    transform: rotate(-180deg);
+    transition: 0.1s linear;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 7px;
+    width: 150%;
+    border: 3px solid #f0f5ff;
+}
+
+.dropdown:hover .dropdown-menu ul li a {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu ul li a:hover {
+    background-color: var(--fkblue);
+    padding: 5px;
+    color: white;
+    border-radius: 6px;
+}
+
+.t-align-c {
+    text-align: center;
+}
+
+.justify-content-se {
+    justify-content: space-evenly;
+}
+
+#subNavBar {
+    background-color: var(--white);
+    width: 70%;
+    height: 12vh;
+    margin: 10px auto;
+}
+
+#subNavBar .flex {
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+#slider{
+    margin: 20px auto;
+    width: 100%;
+}
+
+#slider>div {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.active{
+    display: block !important;
+}
