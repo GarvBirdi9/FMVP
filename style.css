@@ -206,13 +206,17 @@ header .flex nav li:first-child button:hover svg:last-child {
 }
 
 #slider {
-    margin: 20px auto;
+    margin: 40px auto;
     width: 100%;
 }
 
 #slider>div {
     position: relative;
     display: none;
+    width: 100%;
+}
+
+#slider img{
     width: 100%;
 }
 
@@ -329,4 +333,23 @@ header nav ul li:nth-child(3) {
 
 .down-container:hover .elec-down-down-items ul li{
     padding: 7px 7px;
+}
+
+
+
+.box1{
+    height: 400px;
+    width: 80%;
+    background-color: blue;
+}
+
+.box2{
+    height: 400px;
+    width: 20%;
+    background-color: red;
+}
+
+.container{
+    width: 90%;
+    margin: 100px auto;
 }
